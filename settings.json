@@ -157,6 +157,8 @@
 		],
 		"ask": [
 			"Bash(gh api*repos*/pulls:*)",
+			"Bash(git push -f:*)",
+			"Bash(git push --force:*)",
 			"Bash(op:*)",
 			"Bash(open:*)",
 			"Bash(sudo:*)",
