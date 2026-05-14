@@ -120,8 +120,7 @@
 			"Edit(~/.zshrc)",
 			"Read(~/.ssh/**)",
 			"Write(CLAUDE.md)"
-		],
-		"defaultMode": "plan"
+		]
 	},
 	"enableAllProjectMcpServers": false,
 	"enabledMcpjsonServers": [],
