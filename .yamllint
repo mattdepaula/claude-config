@@ -1,6 +1,17 @@
 # Template: https://yamllint.readthedocs.io/en/stable/configuration.html
 # Rules: https://yamllint.readthedocs.io/en/stable/rules.html
 ---
+yaml-files:
+    - '*.yaml'
+    - '*.yml'
+    - '.yamllint'
+
+ignore: |
+    .serena/
+    .llm/
+    .remember/
+    node_modules/
+
 rules:
     anchors: enable
     braces: enable
