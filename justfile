@@ -1,4 +1,4 @@
-set shell := ["bash", "-O", "globstar", "-c"]
+set shell := ["zsh", "-c"]
 
 # `just --list --unsorted`
 default:
@@ -18,4 +18,4 @@ format:
 
 # Run all pre-commit checks
 precommit: format lint
-    pre-commit run --all-files
+    ~/.local/bin/pre-commit  run --all-files

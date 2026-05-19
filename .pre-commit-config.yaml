@@ -6,13 +6,37 @@ repos:
           - id: check-json
           - id: check-toml
           - id: end-of-file-fixer
+            exclude: "^\\.idea/"
           - id: trailing-whitespace
+            exclude: "^\\.idea/"
           - id: check-added-large-files
-            args: ["--maxkb=1000"]
+            args: ['--maxkb=1000']
           - id: check-case-conflict
           - id: check-merge-conflict
           - id: detect-private-key
           - id: mixed-line-ending
-            args: ["--fix=lf"]
+            args: ['--fix=lf']
           - id: check-executables-have-shebangs
           - id: check-shebang-scripts-are-executable
+
+    - repo: local
+      hooks:
+          - id: oxfmt
+            name: oxfmt
+            entry: oxfmt
+            language: system
+            types_or: [yaml, markdown, json]
+
+          - id: markdownlint
+            name: markdownlint
+            entry: markdownlint-cli2
+            language: system
+            types: [markdown]
+            exclude: "^(\\.llm/|\\.remember/|plugins/.+/\\.llm/|plugins/offline-claude-code-guide/docs/)"
+
+          - id: yamllint
+            name: yamllint
+            entry: yamllint --strict
+            language: system
+            types: [yaml]
+            exclude: "^(\\.serena/|\\.llm/|\\.remember/)"

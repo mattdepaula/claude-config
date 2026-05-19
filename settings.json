@@ -23,14 +23,11 @@
 	"includeCoAuthoredBy": false,
 	"permissions": {
 		"allow": [
-			// Tools
 			"Agent",
 			"Bash",
 			"Read",
 			"Search",
 			"WebSearch",
-
-			// Bash commands
 			"Bash(cat:*)",
 			"Bash(chmod:*)",
 			"Bash(cp:*)",
@@ -54,8 +51,6 @@
 			"Bash(rm:*)",
 			"Bash(sqlite3:*)",
 			"Bash(wrangler:*)",
-
-			// Skills — agentic-patterns
 			"Skill(agentic-patterns:author-agent)",
 			"Skill(agentic-patterns:author-hook)",
 			"Skill(agentic-patterns:author-plugin)",
@@ -64,25 +59,17 @@
 			"Skill(agentic-patterns:author-slash-command)",
 			"Skill(agentic-patterns:delegate-to-agents)",
 			"Skill(agentic-patterns:deterministic-work)",
-
-			// Skills — daily-ops
 			"Skill(daily-ops:git-workflow)",
 			"Skill(daily-ops:release-workflow)",
-
-			// Skills — interaction-standards
 			"Skill(interaction-standards:clarify-then-plan)",
 			"Skill(interaction-standards:conversation-style)",
 			"Skill(interaction-standards:explain-dont-edit)",
 			"Skill(interaction-standards:interaction-guide)",
 			"Skill(interaction-standards:stay-in-scope)",
-
-			// Skills — other plugins
 			"Skill(code-review:*)",
 			"Skill(hookify:hookify)",
 			"Skill(humanizer)",
 			"Skill(plugin-dev:*)",
-
-			// WebFetch
 			"WebFetch(domain:api.anthropic.com)",
 			"WebFetch(domain:api.github.com)",
 			"WebFetch(domain:central.sonatype.com)",
@@ -105,8 +92,6 @@
 			"WebFetch(domain:www.anthropic.com)",
 			"WebFetch(domain:www.apache.org)",
 			"WebFetch(domain:www.npmjs.com)",
-
-			// MCP servers
 			"mcp__agent-browser__*",
 			"mcp__chrome-devtools__*",
 			"mcp__plugin_context7_context7__*",
