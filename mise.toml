@@ -1,3 +1,6 @@
+[hooks]
+postinstall = "pre-commit install"
+
 [tools]
 just = "latest"
 pre-commit = "latest"
